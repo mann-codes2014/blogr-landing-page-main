@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+
 .intro {
   background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%)),
     url("./images/bg-pattern-intro.svg");
-  padding: 2em;
+  padding: 3em;
   background-clip: padding-box;
   background-position: left center;
   background-blend-mode: overlay;
   background-size: cover;
+  border-radius: 0 0 0 13%;
 }
 
 .nav-link {
@@ -71,6 +73,106 @@ a {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
 }
+.sub-heading {
+  color: hsl(208, 49%, 24%);
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+}
+/* .parent{
+    margin-top: 10%;
+    padding: 3em;
+    background: url("./images/illustration-editor-desktop.svg");
+  padding: 3em;
+  background-clip: padding-box;
+  background-position: right center;
+  background-blend-mode: overlay;
+  background-size: 40% 100%;
+  background-repeat: no-repeat;
+}
+.features {
+  padding: 5em;
+  width: 50%;
+} */
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 50% auto auto;
+  
+  /* padding: 4em; */
+  padding-top: 4em;
+  padding-left: 4em;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  padding: 1em;
+  
+}
+
+.item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  text-align: end;
+}
+
+.item2 {
+  grid-column: 3;
+  grid-row: 1 / span 4;
+  background: url("./images/illustration-editor-desktop.svg");
+  padding: 3em;
+  background-clip: padding-box;
+  background-position: left center;
+  background-blend-mode: overlay;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.item3 {
+  grid-column: 1 / span 1;
+  grid-row: 2;
+}
+.item4 {
+ grid-column: 1 / span 1;
+  grid-row: 3;
+}
+@media screen and (max-width: 375px) {
+  .grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+   
+    
+  }
+
+  .item1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .item2 {
+    grid-column: 1;
+    grid-row: 2;
+    background: url("./images/illustration-editor-desktop.svg");
+    padding: 3em;
+    background-clip: padding-box;
+    background-position: right center;
+    background-blend-mode: overlay;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .item3 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .item4 {
+    grid-column: 1;
+    grid-row: 4;
+  }
+}
 .footer {
   overflow: hidden;
   margin-top: 250px;
@@ -97,7 +199,11 @@ h3 {
     34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))
   ) !important;
 }
-
+.summary{
+  color:  hsl(207, 13%, 34%);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+}
 .social {
   font-size: 21px !important;
 }

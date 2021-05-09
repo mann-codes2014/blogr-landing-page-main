@@ -1,39 +1,109 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+.intro {
+  background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%)),
+    url("./images/bg-pattern-intro.svg");
+  padding: 2em;
+  background-clip: padding-box;
+  background-position: left center;
+  background-blend-mode: overlay;
+  background-size: cover;
+}
 
-/* body {
-    background: linear-gradient(0deg, #fff, 50%, #DEEEFE);
-    font-family: 'Rubik', sans-serif;
-    background: #455A64;
-    height: 100 !important
-} */
-
+.nav-link {
+  color: hsl(0, 0%, 100%);
+}
+.nav-link:hover {
+  color: hsl(0, 0%, 100%);
+}
+.nav-link:focus {
+  color: hsl(0, 0%, 100%);
+  text-decoration: underline;
+}
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: hsl(0, 0%, 100%);
+  font-weight: bold;
+}
+a {
+  color: hsl(0, 0%, 100%);
+}
+.btn-primary {
+  color: hsl(353, 100%, 62%);
+  background-color: hsl(0, 0%, 100%);
+  border-color: hsl(0, 0%, 100%);
+}
+.btn-primary.active,
+.btn-primary:active,
+.btn-primary:hover,
+.show > .btn-primary.dropdown-toggle {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(355, 100%, 74%);
+  border-color: hsl(355, 100%, 74%);
+}
+.btn-primary:focus {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(355, 100%, 74%);
+  border-color: hsl(355, 100%, 74%);
+  box-shadow: 0 0 0 0.25rem hsl(355, 100%, 74%);
+}
+.btn-outline-primary {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(353, 100%, 62%);
+  border-color: hsl(0, 0%, 100%);
+}
+.btn-outline-primary:active,
+.btn-outline-primary:hover {
+  color: hsl(356, 100%, 66%);
+  background-color: hsl(0, 0%, 100%);
+  border-color: hsl(0, 0%, 100%);
+}
+.btn-outline-primary:focus {
+  box-shadow: 0 0 0 0.25rem hsl(355, 100%, 74%);
+}
+.top-heading {
+  color: hsl(0, 0%, 100%);
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+}
+.top-message {
+  color: hsl(0, 0%, 100%);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+}
 .footer {
-    overflow: hidden;
-    margin-top: 250px;
-    background: #262626;
-    color: #627482 !important;
-    margin-bottom: 0;
-    padding-bottom: 0
+  overflow: hidden;
+  margin-top: 250px;
+  background: hsl(240, 10%, 16%);
+  color: hsl(240, 2%, 79%);
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 small {
-    font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important
+  font-size: calc(
+    12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))
+  ) !important;
 }
 
-
-
 .mt-55 {
-    margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important
+  margin-top: calc(
+    50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))
+  ) !important;
 }
 
 h3 {
-    font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important
+  font-size: calc(
+    34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))
+  ) !important;
 }
 
 .social {
-    font-size: 21px !important
+  font-size: 21px !important;
 }
 
 .rights {
-    font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important
+  font-size: calc(
+    10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))
+  ) !important;
 }

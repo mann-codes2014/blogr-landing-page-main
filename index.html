@@ -11,13 +11,14 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css" />
+    
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | [Blogr]</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -32,126 +33,129 @@
     </style>
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Blogr</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavLightDropdown"
-            aria-controls="navbarNavLightDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavLightDropdown">
-            <ul class="navbar-nav me-auto">
-              <!-- Product -->
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarProductLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+    <div class="intro">
+      <header>
+        <nav class="navbar navbar-expand-lg ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Blogr</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavLightDropdown"
+              aria-controls="navbarNavLightDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavLightDropdown">
+              <ul class="navbar-nav me-auto">
+                <!-- Product -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarProductLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Product
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-light"
+                    aria-labelledby="navbarProductLink"
+                  >
+                    <li><a class="dropdown-item" href="#">Overview</a></li>
+                    <li><a class="dropdown-item" href="#">Pricing</a></li>
+                    <li><a class="dropdown-item" href="#">Marketplace</a></li>
+                    <li><a class="dropdown-item" href="#">Features</a></li>
+                    <li><a class="dropdown-item" href="#">Integrations</a></li>
+                  </ul>
+                </li>
+                <!-- Product -->
+  
+                <!-- Company -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarCompanyLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Company
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-light"
+                    aria-labelledby="navbarCompanyLink"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >About Team Blog Careers</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- Company -->
+                <!-- Connect -->
+                <li class="nav-item dropdown flex-grow-1">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarConnectLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Connect
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-light"
+                    aria-labelledby="navbarConnectLink"
+                  >
+                    <li><a class="dropdown-item" href="#">Contact</a></li>
+                    <li><a class="dropdown-item" href="#">Newsletter</a></li>
+                    <li><a class="dropdown-item" href="#">LinkedIn</a></li>
+                  </ul>
+                </li>
+                <!-- Connect -->
+              </ul>
+  
+              <div class="d-flex">
+                <!-- Login -->
+                <a class="flex-sm-fill text-sm-center nav-link me-2" href="#"
+                  >Login</a
                 >
-                  Product
-                </a>
-                <ul
-                  class="dropdown-menu dropdown-menu-light"
-                  aria-labelledby="navbarProductLink"
-                >
-                  <li><a class="dropdown-item" href="#">Overview</a></li>
-                  <li><a class="dropdown-item" href="#">Pricing</a></li>
-                  <li><a class="dropdown-item" href="#">Marketplace</a></li>
-                  <li><a class="dropdown-item" href="#">Features</a></li>
-                  <li><a class="dropdown-item" href="#">Integrations</a></li>
-                </ul>
-              </li>
-              <!-- Product -->
-
-              <!-- Company -->
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarCompanyLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Company
-                </a>
-                <ul
-                  class="dropdown-menu dropdown-menu-light"
-                  aria-labelledby="navbarCompanyLink"
-                >
-                  <li>
-                    <a class="dropdown-item" href="#"
-                      >About Team Blog Careers</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <!-- Company -->
-              <!-- Connect -->
-              <li class="nav-item dropdown flex-grow-1">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarConnectLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Connect
-                </a>
-                <ul
-                  class="dropdown-menu dropdown-menu-light"
-                  aria-labelledby="navbarConnectLink"
-                >
-                  <li><a class="dropdown-item" href="#">Contact</a></li>
-                  <li><a class="dropdown-item" href="#">Newsletter</a></li>
-                  <li><a class="dropdown-item" href="#">LinkedIn</a></li>
-                </ul>
-              </li>
-              <!-- Connect -->
-            </ul>
-
-            <div class="d-flex">
-              <!-- Login -->
-              <a class="flex-sm-fill text-sm-center nav-link me-2" href="#"
-                >Login</a
-              >
-
-              <!-- Login -->
-              <!-- Sign Up -->
-
-              <button type="button" class="btn btn-primary">Sign Up</button>
-
-              <!-- Sign Up -->
+  
+                <!-- Login -->
+                <!-- Sign Up -->
+  
+                <button type="button" class="btn btn-primary rounded-pill">Sign Up</button>
+  
+                <!-- Sign Up -->
+              </div>
             </div>
           </div>
+        </nav>
+      </header>
+      <h1 class="display-3 text-center top-heading">A modern publishing platform</h1>
+        <p class="fw-light text-center top-message">
+          Grow your audience and build your online brand
+        </p>
+        <div class="d-flex justify-content-center">
+          <button type="button" class="btn btn-primary rounded-pill me-1">
+            Start for Free
+          </button>
+          <button type="button" class="btn btn-outline-primary rounded-pill">
+            Learn More
+          </button>
         </div>
-      </nav>
-    </header>
+    </div>
     <main>
-      <h1 class="display-3 text-center">A modern publishing platform</h1>
-      <p class="fw-light text-center">
-        Grow your audience and build your online brand
-      </p>
-      <div class="d-flex justify-content-center">
-        <button type="button" class="btn btn-primary me-1">
-          Start for Free
-        </button>
-        <button type="button" class="btn btn-outline-primary">
-          Learn More
-        </button>
-      </div>
+      
       <p class="h5 text-center">Designed for the future</p>
       <p class="h6 text-start">Introducing an extensible editor</p>
       <p>

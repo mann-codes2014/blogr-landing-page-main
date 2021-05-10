@@ -78,21 +78,7 @@ a {
   font-family: "Overpass", sans-serif;
   font-weight: 600;
 }
-/* .parent{
-    margin-top: 10%;
-    padding: 3em;
-    background: url("./images/illustration-editor-desktop.svg");
-  padding: 3em;
-  background-clip: padding-box;
-  background-position: right center;
-  background-blend-mode: overlay;
-  background-size: 40% 100%;
-  background-repeat: no-repeat;
-}
-.features {
-  padding: 5em;
-  width: 50%;
-} */
+
 .grid-container {
   display: grid;
   grid-gap: 10px;
@@ -135,6 +121,26 @@ a {
  grid-column: 1 / span 1;
   grid-row: 3;
 }
+
+.middle {
+  background: linear-gradient(to right,hsl(237, 17%, 21%), hsl(237, 23%, 32%)),
+  url("./images/bg-pattern-circles.svg");
+  padding: 13em;
+  margin-top: 3em;
+  background-clip: padding-box;
+  background-position: left center,left bottom;
+  background-blend-mode: overlay;
+  background-size: auto,50%;
+  border-radius: 0 13% 0 13%;
+  background-repeat: no-repeat;
+  text-align: left;
+  position: relative;
+}
+.fix{
+  position:absolute;
+  top:-3em;
+  left: 3em;
+}
 @media screen and (max-width: 375px) {
   .grid-container {
     display: grid;
@@ -156,7 +162,7 @@ a {
   .item2 {
     grid-column: 1;
     grid-row: 2;
-    background: url("./images/illustration-editor-desktop.svg");
+    background: url("./images/illustration-editor-mobile.svg");
     padding: 3em;
     background-clip: padding-box;
     background-position: right center;

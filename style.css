@@ -127,10 +127,10 @@ a {
   url("./images/bg-pattern-circles.svg");
   padding: 13em;
   margin-top: 3em;
-  background-clip: padding-box;
+  background-clip: border-box;
   background-position: left center,left bottom;
-  background-blend-mode: overlay;
-  background-size: auto,50%;
+  background-blend-mode: exclusion;
+  background-size: auto,55%;
   border-radius: 0 13% 0 13%;
   background-repeat: no-repeat;
   text-align: left;
@@ -139,7 +139,14 @@ a {
 .fix{
   position:absolute;
   top:-3em;
-  left: 3em;
+  left: 10em;
+}
+.middle-heading{
+  position:absolute;
+  top:5em;
+  left: 45em;
+  text-align: left;
+  width: 40%;
 }
 @media screen and (max-width: 375px) {
   .grid-container {
@@ -178,7 +185,39 @@ a {
     grid-column: 1;
     grid-row: 4;
   }
+
+  /* middle section */
+  .middle {
+    background: linear-gradient(to right,hsl(237, 17%, 21%), hsl(237, 23%, 32%)),
+    url("./images/bg-pattern-circles.svg");
+    padding: 9em;
+    padding-top: 12em;
+    margin-top: 9em;
+    background-clip: padding-box;
+    background-position: left center,left center;
+    background-blend-mode: exclusion;
+    background-size: auto,100%;
+    border-radius: 0 13% 0 13%;
+    background-repeat: no-repeat;
+    text-align: left;
+    position: relative;
+  }
+  .fix{
+    position:absolute;
+    top:-7em;
+    left: 1em;
+    width: 80%;
+  }
+  .middle-heading{
+    margin-top: 2em;
+    position:absolute;
+    top:7em;
+    left: 1em;
+    text-align: center;
+    width: 90%;
+  }
 }
+
 .footer {
   overflow: hidden;
   margin-top: 250px;

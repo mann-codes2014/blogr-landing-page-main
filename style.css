@@ -83,8 +83,7 @@ a {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 50% auto auto;
-  
-  /* padding: 4em; */
+
   padding-top: 4em;
   padding-left: 4em;
 }
@@ -93,7 +92,6 @@ a {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: left;
   padding: 1em;
-  
 }
 
 .item1 {
@@ -118,35 +116,69 @@ a {
   grid-row: 2;
 }
 .item4 {
- grid-column: 1 / span 1;
+  grid-column: 1 / span 1;
   grid-row: 3;
 }
 
 .middle {
-  background: linear-gradient(to right,hsl(237, 17%, 21%), hsl(237, 23%, 32%)),
-  url("./images/bg-pattern-circles.svg");
+  background: linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%)),
+    url("./images/bg-pattern-circles.svg");
   padding: 13em;
   margin-top: 3em;
   background-clip: border-box;
-  background-position: left center,left bottom;
+  background-position: left center, left bottom;
   background-blend-mode: exclusion;
-  background-size: auto,55%;
+  background-size: auto, 55%;
   border-radius: 0 13% 0 13%;
   background-repeat: no-repeat;
   text-align: left;
   position: relative;
 }
-.fix{
-  position:absolute;
-  top:-3em;
+.fix {
+  position: absolute;
+  top: -3em;
   left: 10em;
 }
-.middle-heading{
-  position:absolute;
-  top:5em;
+.middle-heading {
+  position: absolute;
+  top: 5em;
   left: 45em;
   text-align: left;
   width: 40%;
+}
+.second-grid-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 50% auto auto;
+  padding-top: 4em;
+  padding-left: 0;
+}
+.second-grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  padding: 1em;
+  padding-left: 0;
+}
+.item-graphic {
+  grid-column: 1;
+  grid-row: 1 / span 3;
+  background: url("./images/illustration-laptop-desktop.svg");
+
+  background-clip: border-box;
+  background-position: left center;
+  background-blend-mode: overlay;
+  background-size: auto 100%;
+  -webkit-clip-path: inset(0 0 0 10%);
+  clip-path: inset(0 0 0 10%);
+  background-repeat: no-repeat;
+}
+.item-free {
+  grid-column: 2 / span 1;
+  grid-row: 2;
+}
+.item-tool {
+  grid-column: 2 / span 1;
+  grid-row: 3;
 }
 @media screen and (max-width: 375px) {
   .grid-container {
@@ -157,8 +189,8 @@ a {
   .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
-   
-    
+    padding: 1em;
+    padding-left: 0;
   }
 
   .item1 {
@@ -170,11 +202,11 @@ a {
     grid-column: 1;
     grid-row: 2;
     background: url("./images/illustration-editor-mobile.svg");
-    padding: 3em;
+    padding: 9em;
     background-clip: padding-box;
-    background-position: right center;
+    background-position: center center;
     background-blend-mode: overlay;
-    background-size: 100% 100%;
+    background-size: 100% auto;
     background-repeat: no-repeat;
   }
   .item3 {
@@ -188,33 +220,71 @@ a {
 
   /* middle section */
   .middle {
-    background: linear-gradient(to right,hsl(237, 17%, 21%), hsl(237, 23%, 32%)),
-    url("./images/bg-pattern-circles.svg");
+    background: linear-gradient(
+        to right,
+        hsl(237, 17%, 21%),
+        hsl(237, 23%, 32%)
+      ),
+      url("./images/bg-pattern-circles.svg");
     padding: 9em;
     padding-top: 12em;
     margin-top: 9em;
     background-clip: padding-box;
-    background-position: left center,left center;
+    background-position: left center, left center;
     background-blend-mode: exclusion;
-    background-size: auto,100%;
+    background-size: auto, 100%;
     border-radius: 0 13% 0 13%;
     background-repeat: no-repeat;
     text-align: left;
     position: relative;
   }
-  .fix{
-    position:absolute;
-    top:-7em;
+  .fix {
+    position: absolute;
+    top: -7em;
     left: 1em;
     width: 80%;
   }
-  .middle-heading{
+  .middle-heading {
     margin-top: 2em;
-    position:absolute;
-    top:7em;
+    position: absolute;
+    top: 7em;
     left: 1em;
     text-align: center;
     width: 90%;
+  }
+  .second-grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto;
+    padding-top: 4em;
+    padding-left: 0;
+  }
+  .second-grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 1em;
+    padding-left: 0;
+  }
+  .item-graphic {
+    grid-column: 1;
+    grid-row: 1;
+    background: url("./images/illustration-laptop-desktop.svg");
+    padding: 9em;
+    background-clip: border-box;
+    background-position: center center;
+    background-blend-mode: overlay;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+  .item-free {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .item-tool {
+    grid-column: 1;
+    grid-row: 3;
   }
 }
 
@@ -244,8 +314,8 @@ h3 {
     34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))
   ) !important;
 }
-.summary{
-  color:  hsl(207, 13%, 34%);
+.summary {
+  color: hsl(207, 13%, 34%);
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
 }

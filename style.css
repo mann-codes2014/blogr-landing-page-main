@@ -10,6 +10,7 @@
   background-blend-mode: overlay;
   background-size: cover;
   border-radius: 0 0 0 13%;
+  position: relative;
 }
 
 .nav-link {
@@ -28,6 +29,9 @@
   font-weight: bold;
 }
 a {
+  color: hsl(0, 0%, 100%);
+}
+.navbar-light .navbar-nav .nav-link {
   color: hsl(0, 0%, 100%);
 }
 .btn-primary {
@@ -62,6 +66,21 @@ a {
 }
 .btn-outline-primary:focus {
   box-shadow: 0 0 0 0.25rem hsl(355, 100%, 74%);
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url("./images/icon-hamburger.svg");
+}
+.navbar-light .navbar-toggler {
+  border: none;
+  color: none;
+}
+/* hide close when burger shown */
+.navbar-toggler.collapsed .close-icon {
+  display: none;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  display: inline;
 }
 .top-heading {
   color: hsl(0, 0%, 100%);
@@ -180,7 +199,73 @@ a {
   grid-column: 2 / span 1;
   grid-row: 3;
 }
+
+/* .dropdown-toggle[aria-expanded="true"] .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+.dropdown-toggle .dropdown-icon {
+  transition: 0.7s;
+} */
+.dropdown-toggle[aria-expanded="true"]::after {
+  transform: rotate(180deg);
+}
+.dropdown-toggle::after {
+  transition: 0.7s;
+}
+
+.dropdown-toggle::after {
+  border: none;
+  content: url("./images/icon-arrow-light.svg");
+}
+
 @media screen and (max-width: 375px) {
+  .intro {
+    position: relative;
+    z-index: 1;
+  }
+  .grey-background {
+    background-color: #efeff0;
+    margin: 1em;
+  }
+  .dropdown-toggle::after {
+    content: url("./images/icon-arrow-dark.svg");
+  }
+  #navbarNavLightDropdown {
+    position: absolute;
+    background-color: white;
+    border-radius: 2%;
+    text-align: center;
+    z-index: 1000;
+    top: 4em;
+    width: 100%;
+    box-shadow: 4px 17px 33px 14px rgba(182,171,171,0.88);
+-webkit-box-shadow: 4px 17px 33px 14px rgba(182,171,171,0.88);
+-moz-box-shadow: 4px 17px 33px 14px rgba(182,171,171,0.88);
+  }
+  a {
+    color: hsl(208, 49%, 24%);
+    font-weight: bold;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: hsl(208, 49%, 24%);
+  }
+  .login {
+    color: hsl(208, 49%, 24%);
+    font-weight: bold;
+  }
+  .sign-up {
+    background: linear-gradient(
+      to right,
+      hsl(13, 100%, 72%),
+      hsl(353, 100%, 62%)
+    );
+    color: hsl(0, 0%, 100%);
+  }
+  .nav-link:focus {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+  }
   .grid-container {
     display: grid;
     grid-gap: 10px;

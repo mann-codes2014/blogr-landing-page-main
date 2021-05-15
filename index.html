@@ -36,13 +36,13 @@
     <div class="container-fluid">
       <div class="intro">
         <header>
-          <nav class="navbar navbar-expand-lg">
+          <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
                 <img src="./images/logo.svg" alt="Blogr" />
               </a>
               <button
-                class="navbar-toggler"
+                class="navbar-toggler collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarNavLightDropdown"
@@ -51,6 +51,9 @@
                 aria-label="Toggle navigation"
               >
                 <span class="navbar-toggler-icon"></span>
+                <div class="close-icon py-1">
+                  <img src="./images/icon-close.svg" alt="" />
+                </div>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavLightDropdown">
                 <ul class="navbar-nav me-auto">
@@ -65,16 +68,25 @@
                       aria-expanded="false"
                     >
                       Product
+
                     </a>
                     <ul
-                      class="dropdown-menu dropdown-menu-light"
+                      class="dropdown-menu dropdown-menu-light grey-background"
                       aria-labelledby="navbarProductLink"
                     >
-                      <li><a class="dropdown-item" href="#">Overview</a></li>
-                      <li><a class="dropdown-item" href="#">Pricing</a></li>
-                      <li><a class="dropdown-item" href="#">Marketplace</a></li>
-                      <li><a class="dropdown-item" href="#">Features</a></li>
-                      <li>
+                      <li class="text-center">
+                        <a class="dropdown-item" href="#">Overview</a>
+                      </li>
+                      <li class="text-center">
+                        <a class="dropdown-item" href="#">Pricing</a>
+                      </li>
+                      <li class="text-center">
+                        <a class="dropdown-item" href="#">Marketplace</a>
+                      </li>
+                      <li class="text-center">
+                        <a class="dropdown-item" href="#">Features</a>
+                      </li>
+                      <li class="text-center">
                         <a class="dropdown-item" href="#">Integrations</a>
                       </li>
                     </ul>
@@ -94,10 +106,10 @@
                       Company
                     </a>
                     <ul
-                      class="dropdown-menu dropdown-menu-light"
+                      class="dropdown-menu dropdown-menu-light grey-background"
                       aria-labelledby="navbarCompanyLink"
                     >
-                      <li>
+                      <li class="text-center">
                         <a class="dropdown-item" href="#"
                           >About Team Blog Careers</a
                         >
@@ -118,29 +130,41 @@
                       Connect
                     </a>
                     <ul
-                      class="dropdown-menu dropdown-menu-light"
+                      class="dropdown-menu dropdown-menu-light grey-background"
                       aria-labelledby="navbarConnectLink"
                     >
-                      <li><a class="dropdown-item" href="#">Contact</a></li>
-                      <li><a class="dropdown-item" href="#">Newsletter</a></li>
-                      <li><a class="dropdown-item" href="#">LinkedIn</a></li>
+                      <li class="text-center">
+                        <a class="dropdown-item" href="#">Contact</a>
+                      </li>
+                      <li class="text-center">
+                        <a class="dropdown-item" href="#">Newsletter</a>
+                      </li>
+                      <li class="text-center">
+                        <a class="dropdown-item" href="#">LinkedIn</a>
+                      </li>
                     </ul>
                   </li>
                   <!-- Connect -->
                 </ul>
-
-                <div class="d-flex">
+                <hr class="dropdown-divider d-sm-none">
+                <div class="d-flex flex-column flex-md-row m-1">
                   <!-- Login -->
-                  <a class="flex-sm-fill text-sm-center nav-link me-2" href="#"
-                    >Login</a
-                  >
+                  <div>
+                    <a
+                      class="flex-sm-fill text-sm-center nav-link me-2 login"
+                      href="#"
+                      >Login</a
+                    >
+                  </div>
 
                   <!-- Login -->
                   <!-- Sign Up -->
 
-                  <button type="button" class="btn btn-primary rounded-pill">
-                    Sign Up
-                  </button>
+                  <div>
+                    <button type="button" class="btn btn-primary rounded-pill sign-up">
+                      Sign Up
+                    </button>
+                  </div>
 
                   <!-- Sign Up -->
                 </div>
@@ -245,13 +269,13 @@
       </main>
       <div class="footer text-light">
         <footer>
-          <div class="row my-5 justify-content-center  p-5">
-            <div class="col-xl-3 col-md-4 col-sm-12 ">
+          <div class="row my-5 justify-content-center p-5">
+            <div class="col-xl-3 col-md-4 col-sm-12">
               <h3 class="mb-md-0 mb-5 text-center">
                 <img src="./images/logo.svg" alt="Blogr" />
               </h3>
             </div>
-            <div class="col-xl-3 col-md-4 col-sm-12 ">
+            <div class="col-xl-3 col-md-4 col-sm-12">
               <h6 class="mb-3 mb-lg-4 text-center"><b>Product</b></h6>
               <ul class="list-unstyled text-center">
                 <li>Product</li>
@@ -262,7 +286,7 @@
                 <li>Integrations</li>
               </ul>
             </div>
-            <div class="col-xl-3 col-md-4 col-sm-12 ">
+            <div class="col-xl-3 col-md-4 col-sm-12">
               <h6 class="mb-3 mb-lg-4 text-center"><b>Company</b></h6>
               <ul class="list-unstyled text-center">
                 <li>About</li>
@@ -271,7 +295,7 @@
                 <li>Careers</li>
               </ul>
             </div>
-            <div class="col-xl-3 col-md-4 col-sm-12 ">
+            <div class="col-xl-3 col-md-4 col-sm-12">
               <h6 class="mb-3 mb-lg-4 text-center"><b>Connect</b></h6>
               <ul class="list-unstyled text-center">
                 <li>Contact</li>
